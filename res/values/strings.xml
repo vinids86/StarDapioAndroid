@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StardapioMobile</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">Nome</string>
+    <string name="password">Senha</string>
+    <string name="confirm_password">Confirme a Senha</string>
+    <string name="signin">Entrar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="title_activity_types">TypesActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
