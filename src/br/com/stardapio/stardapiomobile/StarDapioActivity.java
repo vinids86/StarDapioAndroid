@@ -12,7 +12,6 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.view.Menu;
 import br.com.stardapio.stardapiomobile.bean.RestaurantAssociateCluster;
 import br.com.stardapio.stardapiomobile.dialogs.DisplayAccountDialogFragment;
@@ -64,7 +63,6 @@ public class StarDapioActivity extends FragmentActivity
 			return;
 		}
 		mapFragment = new MapFragment();
-
 		FragmentTransaction transaction = getSupportFragmentManager()
 				.beginTransaction();
 		transaction.replace(R.id.map, mapFragment);
@@ -113,27 +111,23 @@ public class StarDapioActivity extends FragmentActivity
 
 	@Override
 	public void onClusterItemInfoWindowClick(RestaurantAssociateCluster item) {
-		Log.i("TAG", item.getDescription() + " onClusterItemInfoWindowClick");
 		Intent intent = new Intent(this, TypesActivity.class);
-		intent.putExtra(Extras.RESTAURANT_ID, item.getId());
+		intent.putExtra(Extras.ID_RESTAURANT, item.getId());
 		startActivity(intent);
 	}
 
 	@Override
 	public boolean onClusterItemClick(RestaurantAssociateCluster item) {
-		Log.i("TAG", item.getDescription() + " onClusterItemClick");
 		return false;
 	}
 
 	@Override
 	public void onClusterInfoWindowClick(
 			Cluster<RestaurantAssociateCluster> cluster) {
-		Log.i("TAG", cluster.toString() + " onClusterInfoWindowClick");
 	}
 
 	@Override
 	public boolean onClusterClick(Cluster<RestaurantAssociateCluster> cluster) {
-		Log.i("TAG", cluster.toString() + " onClusterClick");
 		return false;
 	}
 }

@@ -2,13 +2,18 @@
 <resources>
 
     <string name="app_name">StardapioMobile</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Configurações</string>
     <string name="username">Nome</string>
     <string name="password">Senha</string>
     <string name="confirm_password">Confirme a Senha</string>
     <string name="signin">Entrar</string>
     <string name="cancel">Cancelar</string>
-    <string name="title_activity_types">TypesActivity</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_types">Cardapio</string>
+    <string name="wait">Aguarde</string>
+    <string name="title_activity_menu_slide">Itens</string>
+    <string name="title_activity_qr_code">QrCodeActivity</string>
+    <string name="msg_default_status">Coloque um QRCode dentro do retângulo do visor para escaneá-lo.</string>
+    <string name="scan">Scan</string>
+    <string name="scan_resut_label">Scan Result:</string>
 
 </resources>

@@ -5,8 +5,7 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
-public class TransactionTask extends AsyncTask<Void, Void, Boolean> implements
-		Transaction {
+public class TransactionTask extends AsyncTask<Void, Void, Boolean> {
 
 	private Context context;
 	private Transaction transaction;
@@ -52,18 +51,6 @@ public class TransactionTask extends AsyncTask<Void, Void, Boolean> implements
 		} else {
 			// AlertDialog erro
 		}
-	}
-
-	@Override
-	public void execute() throws Exception {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void updateView() {
-		// TODO Auto-generated method stub
-
 	}
 
 	private void openProgress() {
